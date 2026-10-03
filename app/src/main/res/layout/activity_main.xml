@@ -64,7 +64,7 @@
             android:inputType="text" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/boton_ingreso"
             android:layout_width="178dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
