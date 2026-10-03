@@ -26,23 +26,50 @@
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
-            android:layout_height="262dp"
-            app:srcCompat="@drawable/_1gug8uannl" />
+            android:layout_height="216dp"
+            app:srcCompat="@drawable/sport_fitness_gym_logo_template_graphics_49716794_1" />
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Ingrese su cuenta:"
+            android:text="Ingrese su usuario:"
             android:textAlignment="center"
-            android:textSize="20sp" />
+            android:textSize="24sp" />
 
         <EditText
             android:id="@+id/editTextText"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:hint="Inserte el usuario"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Contraseña"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/editTextText2"
+            android:layout_width="277dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:ems="10"
+            android:hint="Inserte la contraseña"
             android:inputType="text" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="178dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#1F00FD"
+            android:text="Ingresar" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
