@@ -7,69 +7,81 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:layout_width="409dp"
-        android:layout_height="729dp"
-        android:orientation="vertical"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="FitTracker"
-            android:textAlignment="center"
-            android:textSize="60sp"
-            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="409dp"
+            android:layout_height="729dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="match_parent"
-            android:layout_height="216dp"
-            app:srcCompat="@drawable/sport_fitness_gym_logo_template_graphics_49716794_1" />
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FitTracker"
+                android:textAlignment="center"
+                android:textSize="60sp"
+                android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Ingrese su usuario:"
-            android:textAlignment="center"
-            android:textSize="24sp" />
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="216dp"
+                app:srcCompat="@drawable/sport_fitness_gym_logo_template_graphics_49716794_1" />
 
-        <EditText
-            android:id="@+id/editTextText"
-            android:layout_width="275dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:ems="10"
-            android:hint="Inserte el usuario"
-            android:inputType="text" />
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ingrese su usuario:"
+                android:textAlignment="center"
+                android:textSize="24sp" />
 
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="Contraseña"
-            android:textSize="24sp" />
+            <EditText
+                android:id="@+id/editTextText"
+                android:layout_width="275dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:ems="10"
+                android:hint="Inserte el usuario"
+                android:inputType="text" />
 
-        <EditText
-            android:id="@+id/editTextText2"
-            android:layout_width="277dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:ems="10"
-            android:hint="Inserte la contraseña"
-            android:inputType="text" />
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Contraseña"
+                android:textSize="24sp" />
 
-        <Button
-            android:id="@+id/boton_ingreso"
-            android:layout_width="178dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:backgroundTint="#1F00FD"
-            android:text="Ingresar" />
+            <EditText
+                android:id="@+id/editTextText2"
+                android:layout_width="275dp"
+                android:layout_height="58dp"
+                android:layout_gravity="center"
+                android:ems="10"
+                android:hint="Inserte la contraseña"
+                android:inputType="text" />
 
-    </LinearLayout>
+            <Button
+                android:id="@+id/boton_ingreso"
+                android:layout_width="178dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="#1F00FD"
+                android:text="Ingresar" />
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
