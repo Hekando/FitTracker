@@ -20,6 +20,7 @@ public class Registro_Actividad extends AppCompatActivity {
     List<String> tipo_ejercicio = new ArrayList<>();
     Spinner spinner_ejercicio;
     Button boton_cerrar_sesion;
+    Button boton_historial;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,6 +36,12 @@ public class Registro_Actividad extends AppCompatActivity {
 
         boton_cerrar_sesion.setOnClickListener(v ->
                 startActivity( new Intent(Registro_Actividad.this, MainActivity.class))
+        );
+
+        boton_historial = findViewById(R.id.boton_act_registrada);
+
+        boton_historial.setOnClickListener(v ->
+                startActivity( new Intent(Registro_Actividad.this, RecycleActividad.class))
         );
 
         //Codigo para spiner, problando la lista de datos

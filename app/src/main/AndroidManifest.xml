@@ -25,13 +25,8 @@
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".MainActivity2"
-            android:exported="false"
-            android:windowSoftInputMode="adjustResize" />
-        <activity
-            android:name=".List_actividad"
-            android:exported="false"
-            android:windowSoftInputMode="adjustResize" />
+            android:name=".RecycleActividad"
+            android:exported="false" />
     </application>
 
 </manifest>

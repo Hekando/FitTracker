@@ -25,7 +25,7 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/button3"
+                    android:id="@+id/boton_act_registrada"
                     android:layout_width="159dp"
                     android:layout_height="48dp"
                     android:layout_marginLeft="10dp"
